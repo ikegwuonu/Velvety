@@ -1,0 +1,46 @@
+.inspiration{
+    @media(max-width:$md){
+        grid-template-columns: 1fr;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .left-side{
+        flex: 1;
+        background: $light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            padding-top:  3rem;
+            font-size: 30px;
+        }
+        img{
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    .right-side{
+        flex: 1;
+        background: $mid;
+        padding: 3rem;
+
+        .detail{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            img{
+                width: 4rem;
+                height: 4rem;
+            }
+
+            &>:last-child{
+                color: $dark;
+            }
+        }
+    }
+}

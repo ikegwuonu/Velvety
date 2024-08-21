@@ -1,0 +1,46 @@
+footer{
+    background: $light;
+    color: map-get($map: $textColor, $key: light);
+    text-align: center;
+
+   .cards{
+        @media (max-width:$sm){
+            grid-template-columns: 1fr 1fr;
+        }
+        border-bottom: 1px solid $dark;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .card{
+            padding: 1rem;
+            border-right: 1px solid $dark;
+            line-height: 1;
+            p{
+                cursor: pointer;
+                &:hover{
+                    color: $mid;
+                    
+                }
+            }
+        }
+
+   }
+   .copyright{
+        @media(max-width:$sm){
+            flex-direction: column;
+            padding: 0 0.5rem;
+        }
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            display: flex;
+            gap: 1rem;
+            p{
+                cursor: pointer;
+            }
+        }
+   }
+
+}

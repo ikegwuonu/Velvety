@@ -1,0 +1,17 @@
+.about{
+    @media(max-width:$sm){
+        flex-direction: column;
+    }
+    background: $light;
+    padding: $padding;
+    display: flex;
+    justify-content: space-between;
+    color: map-get($map: $textColor, $key:light );
+
+    .left-side{
+        flex: 1;
+    }
+    .right-side{
+        flex:1;
+    }
+}

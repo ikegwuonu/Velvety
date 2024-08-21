@@ -1,0 +1,33 @@
+.subscribe{
+    @media(max-width:$sm){
+        flex-direction: column;
+    }
+    display: flex;
+    padding: $padding;
+    background: $dark;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        color: $light;
+    }
+    form{
+        display: flex;
+        
+        input{
+            @media(max-width:$sm){
+                width: 10rem;
+            }
+            padding: 15px;
+            width: 19rem;
+            border: none;
+            border-right: 1px solid $dark;
+        }
+        button{
+            @extend .hover;
+            border: none;
+            padding: 0 10px;
+        }
+    }
+
+}

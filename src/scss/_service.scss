@@ -1,0 +1,31 @@
+.service{
+    @media(max-width: $sm){
+        flex-direction: column;
+    }
+    display: flex;
+    padding: $padding;
+    background: $light;
+    align-items: center;
+    justify-content: center;
+
+
+    .left{
+        flex: 1;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .right{
+        flex: 1;
+        color:$dark;
+
+        .start{
+            @extend .hover;
+            display: flex;
+            gap: 1rem;
+            padding: 0.2rem 2rem;
+            align-items: center;
+            border: 1px solid $dark;
+            width: fit-content;
+        }
+    }
+}

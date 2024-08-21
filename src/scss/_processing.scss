@@ -1,0 +1,11 @@
+.processing{
+    padding: $padding;
+    background: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:$light;
+    img{
+        cursor: pointer;
+    }
+}

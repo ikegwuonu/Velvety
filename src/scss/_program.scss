@@ -1,0 +1,36 @@
+.program{
+    @media(max-width: $sm){
+        flex-direction: column;
+        gap: 1rem;
+    }
+    display: flex;
+    padding: $padding;
+    align-items: center;
+    justify-content: space-evenly;
+    background: $light;
+
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: fit-content;
+        }
+
+        .join{
+            @extend .hover;
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 1rem;
+            gap: 1rem;
+            
+            border: 1px solid $dark;
+            
+            img{
+                width: fit-content;
+            }
+        }
+    }
+}

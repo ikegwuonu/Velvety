@@ -1,0 +1,13 @@
+.logos{
+    padding: $padding;
+    background: $light;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .images{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

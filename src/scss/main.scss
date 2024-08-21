@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import 'config','header','inspiration','products','about','logos','processing','skincare','service','testimonials','program','subscribe','footer';
+
+body{
+    margin: 0;padding: 0;
+}
+.app{
+    box-sizing: border-box;   
+    overflow: hidden;  
+    font-family:"Outfit",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

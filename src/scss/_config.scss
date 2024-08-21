@@ -1,0 +1,18 @@
+$dark: #899787;
+$light: hsl(100, 24%, 90%);
+$mid: #c8d8c0;
+$textColor: (
+  "light": #213721,
+  "dark": #f2f6ef
+);
+$padding: 2.125rem 2.25rem;
+$paddingsm:0.5rem 1rem;
+$sm:500px;
+$md:800px;
+.hover:hover{
+  scale: 1.1;
+  background: $mid;
+  cursor: pointer;
+  transition: all 8ms ease-in-out;
+
+}
